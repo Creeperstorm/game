@@ -1,0 +1,18 @@
+<html id="0">
+				<h1> Welcome!</h1><br>
+<h2> Click button to generate a random number from 1 to 1000000</h2><br>
+<button id="1" onclick="document.getElementById('2').innerHTML = getRndInteger(1,1000000)">generate!</button><br>
+<p id="2"></p>
+<script>
+function getRndInteger(min,max) {
+ return Math.floor(Math.random() * (max - min)) + min;
+ }
+</script>
+</html>
+
+<form action="yes2.html">
+				click the button below to move on<br>
+				<input type="submit" value="move on">
+</form>
+
+

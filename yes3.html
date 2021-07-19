@@ -1,0 +1,150 @@
+<style>
+div.a {
+position: absolute;
+right: 100px;
+}
+
+div.b {
+bottom: 10px;
+display: none;
+}
+
+div.flip-card-front {
+position: absolute;
+display: none;
+}
+
+div.flip-card {
+display: none;
+}
+
+div.e {
+position: absolute;
+display: none;
+right: 50px;
+bottom: 100px;
+}
+
+div.d {
+right: 10px;
+bottom: 10px;
+display: none;
+}
+
+</style>
+
+<div class="a"><button onclick="myFunction()";>button</button></div><br>
+<script>
+				function myFunction() {
+  var x = document.getElementById("0");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+</script>
+<div class="b" id="0"><button onclick='myFunction3()' onclick='myFunction2()'>button</button></div>
+<script>
+				function myFunction3() {
+  var x = document.getElementById("1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>                                           
+   <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+ <div id="1" class="flip-card">
+  <div id="1" class="flip-card-inner">
+    <div id="1" class="flip-card-front">
+       <img src="Sus.jpg" alt="Avatar" style="width:300px;height:300px;"> 
+    </div>
+    <div class="flip-card-back">
+    
+     <div class="c" id="4"><button alert="WRONG" onclick="myFunction4()">Move On</button></div>
+      </div>
+</div>
+<script>
+				
+function myFunction4() {
+  var x = document.getElementById("5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<form action="game.html">
+				<div class="e" id="5"> 
+								<button>Move on</button>
+				</div>
+</form>
+<div id="5" class="d">
+				<button>Move on</button>
+</div>
